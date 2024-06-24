@@ -760,4 +760,10 @@ footer .credit a {
   .menu .row .menu-card {
     flex: 1 1 calc(100% - 2rem); /* 1 item per row */
   }
+  .hero {
+    position: relative;
+  }
+  .hero .content {
+    position: absolute;
+  }
 }
