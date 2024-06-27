@@ -87,6 +87,7 @@ document.addEventListener("alpine:init", () => {
           // jika bukan barang yang diklik
           if (item.id !== id) {
             return item;
+            a;
           } else {
             item.quantity--;
             item.total = item.price * item.quantity;
@@ -145,9 +146,12 @@ Data Pesanan :
   ${JSON.parse(obj.items).map(
     (item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`
   )}
-
 TOTAL: ${rupiah(obj.total)}
 Terima Kasih.
+
+Note :
+Sertakan bukti pembayarannya!
+Bagi yang Cash silahkan langsung ke kasir!
   `;
 };
 
